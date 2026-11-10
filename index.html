@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pemilihan Ketua Departemen · Teknik Geodesi UGM</title>
+  <meta name="description" content="Rapat Departemen Khusus: Pemilihan Ketua Departemen & Penetapan Koordinator KBK, Departemen Teknik Geodesi FT UGM." />
+  <link rel="icon" type="image/png" href="media/UGM.png" />
+  <link rel="apple-touch-icon" href="media/UGM.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand">
+        <span class="brand__mark">
+          <img src="media/geodesi.jpg" alt="Logo Departemen Teknik Geodesi" />
+        </span>
+        <span class="brand__text">
+          <strong>Departemen Teknik Geodesi</strong>
+          <small>Fakultas Teknik · Universitas Gadjah Mada</small>
+        </span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#top" data-spy="top">Home</a>
+        <a href="#pertimbangan" data-spy="pertimbangan">Pertimbangan</a>
+        <a href="#dasar-hukum" data-spy="dasar-hukum">Dasar Hukum</a>
+        <a href="#tata-cara" data-spy="tata-cara">Tata Cara</a>
+        <a href="#bilik-suara" data-spy="bilik-suara" class="nav__cta">Bilik Suara</a>
+        <button class="nav__admin" id="adminBtn" type="button" title="Login Admin">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4Zm0 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 14c-2.6-.8-4.8-2.9-5.8-5.4 1.2-1.6 3.4-2.6 5.8-2.6s4.6 1 5.8 2.6c-1 2.5-3.2 4.6-5.8 5.4Z"/></svg>
+          <span>Admin</span>
+        </button>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu" type="button"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__contours" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow eyebrow--light">Rapat Departemen Khusus · DTGD</p>
+        <h1>Pemilihan Ketua Departemen<br><span>Teknik Geodesi</span></h1>
+        <p class="hero__lead">Pemilihan Ketua Departemen Teknik Geodesi Tahun 2026, dilaksanakan secara daring sesuai Peraturan Rektor UGM.</p>
+        <div class="hero__meta">
+          <div><span>Tanggal</span><strong>Rabu, 11 November 2026</strong></div>
+          <div><span>Pelaksanaan</span><strong>Rapat daring</strong></div>
+          <div><span>Sifat suara</span><strong>Anonim</strong></div>
+        </div>
+        <div class="hero__actions">
+          <a href="#bilik-suara" class="btn btn--gold">Menuju Bilik Suara</a>
+          <a href="#tata-cara" class="btn btn--ghost-light">Lihat Tata Cara</a>
+        </div>
+      </div>
+      <aside class="hero__status" id="heroStatus" aria-live="polite">
+        <p class="status__label">Status Pemilihan</p>
+        <div class="status__pill status__pill--idle" id="statusPill"><i></i><span>Memuat…</span></div>
+        <h3 id="statusRound">—</h3>
+        <p id="statusDesc" class="status__desc">Menghubungkan ke server pemilihan…</p>
+        <ol class="status__steps" id="statusSteps">
+          <li data-stage="tahap1"><b>1</b><span>Penjaringan 3 besar</span></li>
+          <li data-stage="tahap2"><b>2</b><span>Pemilihan 1 dari 3 calon</span></li>
+          <li data-stage="tahap3"><b>3</b><span>Penetapan Kadep terpilih</span></li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <main>
+    <!-- ============ PERTIMBANGAN ============ -->
+    <section class="section" id="pertimbangan">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Latar Belakang</p>
+          <h2>Pertimbangan</h2>
+          <p class="section__sub">Hal-hal yang mendasari dilaksanakannya Rapat Departemen Khusus pemilihan Ketua Departemen.</p>
+        </div>
+        <div class="consider">
+          <article class="consider__item">
+            <span class="consider__no">01</span>
+            <div><h3>Surat Dekan</h3><p>Surat Dekan berisi permintaan pemilihan Ketua Departemen (dalam proses).</p></div>
+          </article>
+          <article class="consider__item">
+            <span class="consider__no">02</span>
+            <div><h3>Pertimbangan Senat FT</h3><p>Pertimbangan Senat Fakultas Teknik atas pengusulan nama Trias Aditya sebagai Wakil Dekan Kerja Sama &amp; Pengembangan Ekosistem. SK Rektor sudah diproses bersama tiga Wakil Dekan lainnya.</p></div>
+          </article>
+          <article class="consider__item">
+            <span class="consider__no">03</span>
+            <div><h3>Tanggapan SU UGM</h3><p>Tanggapan SU UGM atas usulan yang disampaikan kepada Dekan: pemilihan Kadep dapat segera dilaksanakan agar pada saat pelantikan Wakil Dekan, DTGD telah memiliki Ketua Departemen.</p></div>
+          </article>
+          <article class="consider__item">
+            <span class="consider__no">04</span>
+            <div><h3>Tenggat Usulan ke Rektor</h3><p>Surat usulan Kadep kepada Rektor disampaikan oleh Dekan sebelum <strong>17 November</strong>, dengan pertimbangan Senat.</p></div>
+          </article>
+          <article class="consider__item">
+            <span class="consider__no">05</span>
+            <div><h3>Rapat Daring</h3><p>Rapat dilaksanakan secara daring dengan mengacu pada Peraturan Rektor Nomor 16 Tahun 2025.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DASAR HUKUM ============ -->
+    <section class="section section--tint" id="dasar-hukum">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Dasar Hukum</p>
+          <h2>SK Nomor 15 Tahun 2025</h2>
+          <p class="section__sub">Tentang Tata Cara Seleksi &amp; Pengangkatan Pejabat di Bawah Dekan dan Wakil Dekan pada Fakultas &amp; Sekolah — Bab III, Ketua dan Sekretaris Departemen.</p>
+        </div>
+
+        <div class="law">
+          <div class="law__tabs" role="tablist">
+            <button role="tab" class="is-active" data-tab="p8">Pasal 8<small>Persyaratan</small></button>
+            <button role="tab" data-tab="p10">Pasal 10<small>Daftar bakal calon</small></button>
+            <button role="tab" data-tab="p11">Pasal 11<small>Seleksi dalam rapat</small></button>
+            <button role="tab" data-tab="p12">Pasal 12<small>Penetapan</small></button>
+          </div>
+
+          <div class="law__panel is-active" data-panel="p8">
+            <h3>Pasal 8 ayat (1) — Persyaratan calon Ketua Departemen</h3>
+            <ol class="alpha">
+              <li>Warga negara Indonesia berjiwa Pancasila;</li>
+              <li>Sehat dan berkemampuan secara jasmani, mental, dan rohani dalam menjalankan tugas;</li>
+              <li>Berstatus sebagai Dosen pegawai negeri sipil, Dosen tetap, atau Dosen dengan perjanjian kerja;</li>
+              <li>Memiliki integritas, rasa tanggung jawab (<em>commitment</em>), dan moralitas yang tinggi;</li>
+              <li>Memiliki jabatan akademik paling rendah lektor;</li>
+              <li>Paling rendah berpendidikan dan bergelar doktor atau spesialis 2 atau subspesialis sesuai kerangka kualifikasi nasional Indonesia level 9;</li>
+              <li>Memiliki masa kerja paling sedikit 5 (lima) tahun sebagai Dosen di UGM;</li>
+              <li>Belum berusia 60 (enam puluh) tahun pada saat diangkat sebagai Ketua Departemen dari non Guru Besar, atau belum berusia 65 (enam puluh lima) tahun pada saat diangkat sebagai Ketua Departemen dari Guru Besar; dan</li>
+              <li>Tidak pernah melakukan tindak pidana yang diancam dengan pidana penjara paling singkat 5 (lima) tahun.</li>
+            </ol>
+          </div>
+
+          <div class="law__panel" data-panel="p10">
+            <h3>Pasal 10</h3>
+            <ol class="num">
+              <li>Dekan menyusun daftar Dosen pada Departemen terkait yang memenuhi persyaratan sebagai bakal calon ketua dan sekretaris Departemen.</li>
+              <li>Dekan mengumumkan daftar Dosen sebagaimana dimaksud pada ayat (1) pada rapat Fakultas/Sekolah sebelum seleksi dilaksanakan.</li>
+            </ol>
+          </div>
+
+          <div class="law__panel" data-panel="p11">
+            <h3>Pasal 11</h3>
+            <ol class="num">
+              <li>Seleksi calon dilakukan dalam rapat Departemen yang khusus diadakan untuk itu sesuai dengan persyaratan yang telah ditetapkan sebelumnya.</li>
+              <li>Rapat Departemen bertugas menentukan 2 (dua) calon ketua Departemen dan 2 (dua) calon sekretaris Departemen.</li>
+              <li>Rapat Departemen dipimpin oleh ketua Departemen.</li>
+              <li>Apabila ketua Departemen berhalangan, rapat dipimpin oleh sekretaris Departemen.</li>
+              <li>Dalam hal ketua dan sekretaris Departemen sebagaimana dimaksud pada ayat (2) dan ayat (3) diusulkan menjadi calon, maka pelaksanaan seleksi dipimpin oleh Dosen tertua dan/atau Dosen termuda.</li>
+              <li>Calon ketua dan sekretaris Departemen harus hadir pada saat rapat Departemen.</li>
+              <li><mark>Rapat sah apabila dihadiri oleh lebih dari 2/3 (dua per tiga) dari jumlah Dosen pada Departemen.</mark></li>
+              <li>Apabila jumlah yang hadir sebagaimana dimaksud pada ayat (7) belum terpenuhi, rapat ditunda paling lama 15 (lima belas) menit, dan selanjutnya dinyatakan sah untuk diselenggarakan dan mengambil keputusan.</li>
+              <li><mark>Seleksi sebagaimana dimaksud pada ayat (1) mengutamakan musyawarah dan mufakat.</mark></li>
+              <li>Departemen dapat menggunakan mekanisme seleksi tambahan sebelum seleksi sebagaimana dimaksud pada ayat (1).</li>
+            </ol>
+          </div>
+
+          <div class="law__panel" data-panel="p12">
+            <h3>Pasal 12</h3>
+            <ol class="num">
+              <li>Setelah menerima rekomendasi calon ketua dan sekretaris Departemen sebagaimana dimaksud dalam Pasal 11, Dekan melakukan seleksi untuk menentukan ketua dan sekretaris Departemen.</li>
+              <li>Dalam penentuan ketua dan sekretaris Departemen sebagaimana dimaksud pada ayat (1), Dekan dapat menentukan ketua dan sekretaris Departemen selain yang direkomendasikan sebagaimana dimaksud dalam Pasal 11.</li>
+              <li>Calon lain ketua dan sekretaris Departemen sebagaimana dimaksud pada ayat (2) merupakan anggota Departemen yang memenuhi persyaratan sebagaimana dimaksud dalam Pasal 8.</li>
+              <li>Dekan mengirimkan nama calon ketua dan sekretaris Departemen kepada Rektor paling lambat 2 (dua) hari kerja setelah memperoleh pertimbangan SF/SS.</li>
+              <li>Ketua dan sekretaris Departemen ditetapkan dengan Keputusan Rektor paling lambat 10 (sepuluh) hari kerja setelah menerima nama calon ketua dan sekretaris Departemen dari Dekan dan pertimbangan SF/SS.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TATA CARA ============ -->
+    <section class="section" id="tata-cara">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Mekanisme</p>
+          <h2>Tata Cara Pemilihan</h2>
+          <p class="section__sub">Seleksi mengutamakan musyawarah dan mufakat (Pasal 11 ayat 9). Bila mufakat tidak tercapai, pemilihan dilakukan melalui pemungutan suara daring berikut.</p>
+        </div>
+
+        <div class="flow">
+          <div class="flow__step">
+            <span class="flow__tag">Tahap 1</span>
+            <h3>Online Vote</h3>
+            <p>Setiap pemilih memilih <strong>1 nama</strong> dari seluruh dosen yang eligible untuk <strong>menjaring 3 besar</strong>.</p>
+          </div>
+          <div class="flow__arrow" aria-hidden="true"></div>
+          <div class="flow__step">
+            <span class="flow__tag">Tahap 2</span>
+            <h3>Online Vote</h3>
+            <p>Setiap pemilih memilih <strong>1 nama dari 3 calon</strong> hasil Tahap 1.</p>
+          </div>
+          <div class="flow__arrow" aria-hidden="true"></div>
+          <div class="flow__step flow__step--final">
+            <span class="flow__tag">Tahap 3</span>
+            <h3>Penetapan</h3>
+            <p>Penetapan Ketua Departemen terpilih oleh rapat.</p>
+          </div>
+        </div>
+
+        <p class="flow__note">Putaran dapat diulang apabila terdapat perolehan suara yang sama (seri) sehingga peringkat belum dapat ditentukan.</p>
+
+        <div class="optional">
+          <div class="optional__head">
+            <span class="optional__icon" aria-hidden="true">↳</span>
+            <p>Jika Kadep terpilih adalah <strong>Sekdep / Kaprodi / Sekprodi</strong> atau <strong>Koordinator KBK</strong>, maka dipilih penggantinya:</p>
+          </div>
+          <div class="optional__grid">
+            <article><b>A</b><h4>Sekdep terpilih</h4><p>Ketua Sidang mempersilakan Kadep terpilih mengusulkan 3 nama Sekdep untuk dipilih secara daring.</p></article>
+            <article><b>B</b><h4>Kaprodi Sarjana terpilih</h4><p>Sekprodi secara otomatis menjadi Kaprodi.</p></article>
+            <article><b>C</b><h4>Kaprodi Magister/Doktor terpilih</h4><p>Ketua Sidang mempersilakan Kadep terpilih mengusulkan Kaprodi.</p></article>
+            <article><b>D</b><h4>Koordinator KBK terpilih</h4><p>Ketua Sidang mempersilakan Komunitas KBK untuk mengusulkan Koordinator.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BILIK SUARA ============ -->
+    <section class="section section--ballot" id="bilik-suara">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Bilik Suara</p>
+          <h2 id="ballotTitle">Pilih Calon Kadep DTGD</h2>
+          <p class="section__sub" id="ballotSub">Klik kartu salah satu calon untuk memberikan suara. Anda akan diminta mengonfirmasi pilihan sebanyak dua kali.</p>
+        </div>
+
+        <div class="ballot-bar" id="ballotBar" hidden>
+          <div class="ballot-bar__info">
+            <span class="ballot-bar__badge" id="ballotStage">Tahap 1</span>
+            <div>
+              <strong id="ballotRoundName">—</strong>
+              <small id="ballotRule">Pilih 1 nama</small>
+            </div>
+          </div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2Zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/></svg>
+            <input type="search" id="searchInput" placeholder="Cari nama calon…" autocomplete="off" />
+          </label>
+        </div>
+
+        <div id="ballotNotice" class="notice" hidden></div>
+        <div class="grid" id="candidateGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ HASIL PENETAPAN ============ -->
+    <section class="section section--tint" id="penetapan" hidden>
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Tahap 3</p>
+          <h2>Hasil Penetapan</h2>
+          <p class="section__sub">Hasil yang telah ditetapkan dalam Rapat Departemen Khusus.</p>
+        </div>
+        <div class="announce" id="announceList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Departemen Teknik Geodesi</strong>
+        <p>Fakultas Teknik, Universitas Gadjah Mada<br>Jl. Grafika No. 2, Kampus UGM, Yogyakarta</p>
+      </div>
+      <div class="footer__right">
+        <p>Pemungutan suara bersifat anonim. Tidak ada data identitas pemilih yang dikumpulkan.</p>
+        <button class="link-btn" id="reopenRules" type="button">Baca kembali ketentuan pemilihan</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ MODALS ============ -->
+  <!-- Selamat datang -->
+  <div class="modal" id="welcomeModal" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+    <div class="modal__dialog modal__dialog--wide">
+      <div class="welcome__top">
+        <p class="eyebrow eyebrow--light">Rapat Departemen Khusus · 11 November 2026</p>
+        <h2 id="welcomeTitle">Selamat Datang, Bapak/Ibu Dosen</h2>
+        <p>Di laman Pemilihan Ketua Departemen Teknik Geodesi, Fakultas Teknik UGM.</p>
+      </div>
+      <div class="welcome__body">
+        <h3>Ketentuan Pemilihan</h3>
+        <ul class="rules">
+          <li><b>Dasar hukum.</b> Pemilihan mengacu pada SK Nomor 15 Tahun 2025 tentang Tata Cara Seleksi &amp; Pengangkatan Pejabat di Bawah Dekan dan Wakil Dekan, serta dilaksanakan daring sesuai Peraturan Rektor Nomor 16 Tahun 2025.</li>
+          <li><b>Musyawarah mufakat diutamakan.</b> Pemungutan suara daring digunakan bila mufakat tidak tercapai.</li>
+          <li><b>Kuorum.</b> Rapat sah apabila dihadiri lebih dari 2/3 jumlah Dosen Departemen; bila belum terpenuhi, rapat ditunda paling lama 15 menit.</li>
+          <li><b>Calon.</b> Calon adalah Dosen yang memenuhi persyaratan Pasal 8 dan wajib hadir dalam rapat.</li>
+          <li><b>Tahapan.</b> Tahap 1 menjaring 3 besar, Tahap 2 memilih 1 dari 3 calon, Tahap 3 penetapan. Putaran dapat diulang bila terjadi perolehan suara seri.</li>
+          <li><b>Satu suara per putaran.</b> Setiap pemilih memilih tepat 1 nama pada setiap putaran. Pilihan yang sudah dikirim tidak dapat diubah.</li>
+        </ul>
+        <div class="privacy">
+          <div class="privacy__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 1a5 5 0 0 1 5 5v3h1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2h1V6a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v3h6V6a3 3 0 0 0-3-3Zm0 10a2 2 0 0 0-1 3.7V19h2v-2.3A2 2 0 0 0 12 13Z"/></svg>
+          </div>
+          <div>
+            <h4>Pernyataan Anonimitas</h4>
+            <p>Pemilihan (voting) bersifat <strong>anonim</strong>. Anda tidak perlu login, dan tidak ada data identitas yang disimpan sama sekali — tidak ada nama, email, alamat IP, maupun informasi perangkat. Sistem hanya mencatat pilihan beserta waktu pemberian suara untuk keperluan penghitungan. Sebuah penanda di browser Anda digunakan semata-mata agar setiap pemilih hanya dapat memberikan satu suara pada setiap putaran.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal__foot">
+        <button class="btn btn--primary btn--lg" id="agreeBtn" type="button">Saya Setuju</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Konfirmasi pilihan -->
+  <div class="modal" id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+    <div class="modal__dialog modal__dialog--confirm">
+      <div class="confirm__steps"><span class="is-on" id="cStep1">1</span><i></i><span id="cStep2">2</span></div>
+      <img class="confirm__photo" id="confirmPhoto" alt="" />
+      <div class="confirm__initials" id="confirmInitials" hidden></div>
+      <h3 id="confirmTitle">Konfirmasi Pilihan</h3>
+      <p id="confirmText"></p>
+      <div class="confirm__warn" id="confirmWarn" hidden>Suara yang sudah dikirim <strong>tidak dapat diubah atau ditarik kembali</strong>.</div>
+      <div class="modal__actions">
+        <button class="btn btn--ghost" id="confirmCancel" type="button">Batal</button>
+        <button class="btn btn--primary" id="confirmOk" type="button">Ya, saya yakin</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sukses -->
+  <div class="modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+    <div class="modal__dialog modal__dialog--confirm">
+      <div class="success__check" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" fill="none" stroke="currentColor" stroke-width="3"/><path d="M15 27l7 7 15-16" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3 id="successTitle">Terima kasih</h3>
+      <p id="successText">Suara Anda telah tercatat secara anonim.</p>
+      <div class="modal__actions"><button class="btn btn--primary" data-close type="button">Tutup</button></div>
+    </div>
+  </div>
+
+  <!-- Login admin -->
+  <div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <form class="modal__dialog modal__dialog--confirm" id="loginForm">
+      <h3 id="loginTitle">Login Admin</h3>
+      <p class="muted">Khusus Ketua Sidang / panitia pemilihan.</p>
+      <label class="field"><span>Password</span><input type="password" id="loginPassword" autocomplete="current-password" required /></label>
+      <p class="form-error" id="loginError" hidden></p>
+      <p class="muted small" id="demoHint" hidden>Mode demo aktif — password: <code>admin</code></p>
+      <div class="modal__actions">
+        <button class="btn btn--ghost" type="button" data-close>Batal</button>
+        <button class="btn btn--primary" type="submit" id="loginSubmit">Masuk</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- ============ ADMIN PANEL ============ -->
+  <div class="admin" id="adminPanel" hidden>
+    <header class="admin__bar">
+      <div class="admin__title">
+        <strong>Panel Admin</strong>
+        <span class="live-dot" id="liveDot">Live</span>
+        <span class="muted small" id="lastSync"></span>
+      </div>
+      <div class="admin__bar-actions">
+        <button class="btn btn--ghost btn--sm" id="settingsBtn" type="button">Pengaturan</button>
+        <button class="btn btn--ghost btn--sm" id="adminClose" type="button">Ke halaman pemilih</button>
+        <button class="btn btn--danger-ghost btn--sm" id="logoutBtn" type="button">Keluar</button>
+      </div>
+    </header>
+    <div class="admin__body">
+      <aside class="admin__side">
+        <div class="side__head">
+          <h4>Putaran</h4>
+          <button class="btn btn--primary btn--sm" id="newRoundBtn" type="button">+ Buat Putaran</button>
+        </div>
+        <div id="roundList" class="round-list"></div>
+        <div class="side__head side__head--mt">
+          <h4>Penetapan</h4>
+          <button class="btn btn--ghost btn--sm" id="manualAnnounceBtn" type="button">+ Manual</button>
+        </div>
+        <div id="adminAnnounceList" class="mini-announce"></div>
+      </aside>
+      <section class="admin__main" id="adminMain"></section>
+    </div>
+  </div>
+
+  <!-- Dialog: buat putaran -->
+  <div class="modal" id="roundModal" role="dialog" aria-modal="true" aria-labelledby="roundModalTitle">
+    <form class="modal__dialog modal__dialog--wide" id="roundForm">
+      <div class="modal__head"><h3 id="roundModalTitle">Buat Putaran Baru</h3></div>
+      <div class="modal__scroll">
+        <div class="form-grid">
+          <label class="field"><span>Tahap</span>
+            <select id="rfStage">
+              <option value="tahap1">Tahap 1 — Penjaringan 3 besar</option>
+              <option value="tahap2">Tahap 2 — Pemilihan 1 dari 3 calon</option>
+              <option value="opsA">Opsional A — Pemilihan Sekdep</option>
+              <option value="opsC">Opsional C — Kaprodi Magister/Doktor</option>
+              <option value="opsD">Opsional D — Koordinator KBK</option>
+              <option value="lain">Lainnya</option>
+            </select>
+          </label>
+          <label class="field"><span>Jumlah yang dijaring</span><input type="number" id="rfSeats" min="1" max="10" value="3" /></label>
+          <label class="field field--full"><span>Nama putaran</span><input type="text" id="rfName" required /></label>
+          <label class="field field--full"><span>Jabatan yang dipilih</span><input type="text" id="rfPosition" required /></label>
+        </div>
+        <div class="cand-pick">
+          <div class="cand-pick__head">
+            <span>Calon <b id="rfCount">0</b> dipilih</span>
+            <div>
+              <button type="button" class="link-btn" id="rfAll">Pilih semua</button> ·
+              <button type="button" class="link-btn" id="rfNone">Kosongkan</button>
+            </div>
+          </div>
+          <div class="cand-pick__list" id="rfList"></div>
+          <div class="cand-pick__custom">
+            <input type="text" id="rfCustomName" placeholder="Tambah nama lain (mis. usulan Komunitas KBK)" />
+            <button type="button" class="btn btn--ghost btn--sm" id="rfCustomAdd">Tambah</button>
+          </div>
+        </div>
+        <label class="check"><input type="checkbox" id="rfOpen" checked /> Buka putaran ini sekarang (putaran lain yang sedang dibuka akan ditutup)</label>
+        <p class="form-error" id="rfError" hidden></p>
+      </div>
+      <div class="modal__foot modal__foot--split">
+        <button class="btn btn--ghost" type="button" data-close>Batal</button>
+        <button class="btn btn--primary" type="submit">Simpan Putaran</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Dialog: penetapan -->
+  <div class="modal" id="announceModal" role="dialog" aria-modal="true" aria-labelledby="announceTitle">
+    <form class="modal__dialog" id="announceForm">
+      <div class="modal__head"><h3 id="announceTitle">Penetapan</h3></div>
+      <div class="modal__scroll">
+        <label class="field"><span>Jabatan</span><input type="text" id="afPosition" required /></label>
+        <label class="field"><span>Nama yang ditetapkan</span><input type="text" id="afName" required /></label>
+        <label class="field" id="afJabatanWrap"><span>Jabatan saat ini dari yang ditetapkan</span>
+          <select id="afJabatan">
+            <option value="">Tidak sedang menjabat (tidak perlu pengganti)</option>
+            <option value="sekdep">Sekretaris Departemen</option>
+            <option value="kaprodi-s1">Kaprodi Sarjana</option>
+            <option value="sekprodi-s1">Sekprodi</option>
+            <option value="kaprodi-s2s3">Kaprodi Magister/Doktor</option>
+            <option value="koord-kbk">Koordinator KBK</option>
+          </select>
+        </label>
+        <div class="opt-hint" id="afHint" hidden></div>
+        <label class="field"><span>Catatan (opsional)</span><input type="text" id="afNote" placeholder="mis. Ditetapkan melalui musyawarah mufakat" /></label>
+      </div>
+      <div class="modal__foot modal__foot--split">
+        <button class="btn btn--ghost" type="button" data-close>Batal</button>
+        <button class="btn btn--primary" type="submit">Tetapkan &amp; Umumkan</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Dialog: pengaturan -->
+  <div class="modal" id="settingsModal" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+    <form class="modal__dialog modal__dialog--confirm" id="settingsForm">
+      <h3 id="settingsTitle">Pengaturan</h3>
+      <label class="field"><span>Jumlah dosen Departemen (untuk kuorum &gt; 2/3)</span><input type="number" id="sfTotal" min="0" /></label>
+      <p class="muted small">Dipakai untuk menghitung partisipasi pemilih dan batas kuorum.</p>
+      <div class="modal__actions">
+        <button class="btn btn--ghost" type="button" data-close>Batal</button>
+        <button class="btn btn--primary" type="submit">Simpan</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Tombol mengambang: ke Bilik Suara & kembali ke atas -->
+  <div class="fab" id="fab">
+    <a href="#bilik-suara" class="fab__btn fab__btn--vote" id="fabVote" title="Menuju Bilik Suara">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18 13h-.7l-2 2h1.9l1.8 2H5l1.8-2h2l-2-2H6l-3 3v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4l-3-3Zm-1-5-5 5-3.5-3.5 5-5L17 8Zm-4.3-6.4L6.3 8a1 1 0 0 0 0 1.4l5 5a1 1 0 0 0 1.4 0L19 8a1 1 0 0 0 0-1.4l-5-5a1 1 0 0 0-1.3 0Z"/></svg>
+      <span>Bilik Suara</span>
+    </a>
+    <a href="#top" class="fab__btn fab__btn--top" id="fabTop" title="Kembali ke atas" aria-label="Kembali ke atas">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 4 4.6 11.4 6 12.8l5-5V20h2V7.8l5 5 1.4-1.4L12 4Z"/></svg>
+    </a>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
