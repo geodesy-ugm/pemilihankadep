@@ -590,9 +590,14 @@
       .sort((a, b) => b.votes - a.votes || a.name.localeCompare(b.name));
     const total = rows.reduce((s, x) => s + x.votes, 0);
     const k = Math.min(Number(r.seats) || 1, rows.length);
-    const res = { rows, total, k, kind: "empty", winners: [], tied: [], above: [], needed: 0 };
+    const res = { rows, total, k, kind: "empty", winners: [], tied: [], above: [], needed: 0, unvoted: [] };
     if (!total || !k) return res;
     const cut = rows[k - 1].votes;
+    // Batas 0 → yang 0 suara TIDAK dianggap seri; yang mendapat suara langsung lolos
+    if (cut === 0) {
+      const got = rows.filter((x) => x.votes > 0);
+      return Object.assign(res, { kind: "short", winners: got, needed: k - got.length, unvoted: rows.filter((x) => !x.votes) });
+    }
     const above = rows.filter((x) => x.votes > cut);
     const atCut = rows.filter((x) => x.votes === cut);
     const needed = k - above.length;
@@ -686,6 +691,18 @@
       return `<div class="verdict verdict--info"><div class="verdict__icon">ℹ️</div><div><h4>Belum ada suara</h4>
         <p>${r.status === "draft" ? "Putaran masih berupa draf. Klik <b>Buka Putaran</b> agar pemilih dapat memberikan suara." : "Putaran ini ditutup tanpa suara masuk."}</p></div></div>`;
     }
+    if (a.kind === "short") {
+      const finalists = (r.carry || []).concat(a.winners);
+      return `<div class="verdict verdict--warn"><div class="verdict__icon">📉</div><div>
+        <h4>Baru ${a.winners.length} calon memperoleh suara — kurang ${a.needed} nama</h4>
+        <p>Lolos: ${names(a.winners)}. Calon lain memperoleh 0 suara (tidak dihitung sebagai seri).</p>
+        <div class="rd-actions">
+          <button class="btn btn--primary btn--sm" data-act="repeat-short">Putaran ulang untuk ${a.needed} nama tersisa</button>
+          ${r.stage === "tahap1" && finalists.length >= 2
+            ? `<button class="btn btn--ghost btn--sm" data-act="to-tahap2">Lanjut ke Tahap 2 dengan ${finalists.length} calon</button>` : ""}
+        </div>
+      </div></div>`;
+    }    
     if (a.kind === "tie") {
       const sameStageName = (STAGES[r.stage] || STAGES.lain).name;
       return `<div class="verdict verdict--warn"><div class="verdict__icon">⚖️</div><div>
@@ -740,7 +757,7 @@
   function barsHtml(a) {
     const max = Math.max(1, ...a.rows.map((x) => x.votes));
     const tiedIds = new Set(a.kind === "tie" ? a.tied.map((x) => x.id) : []);
-    const topIds = new Set(a.kind === "clear" ? a.winners.map((x) => x.id) : a.above.map((x) => x.id));
+    const topIds = new Set(a.kind === "clear" || a.kind === "short" ? a.winners.map((x) => x.id) : a.above.map((x) => x.id));
     let rank = 0, prev = null;
     return `<div class="bars">${a.rows.map((x, i) => {
       if (x.votes !== prev) { rank = i + 1; prev = x.votes; }
@@ -827,6 +844,12 @@
         carry: (r.carry || []).concat(a.above.map(({ id, name }) => ({ id, name }))), repeatOf: r
       });
     }
+    if (act === "repeat-short") {
+      return openRoundModal({
+        stage: r.stage, position: r.position, seats: a.needed, candidates: a.unvoted,
+        carry: (r.carry || []).concat(a.winners.map(({ id, name }) => ({ id, name }))), repeatOf: r
+      });
+    }    
     if (act === "repeat-all") {
       return openRoundModal({ stage: r.stage, position: r.position, seats: r.seats, candidates: r.candidates, carry: r.carry || [], repeatOf: r });
     }
